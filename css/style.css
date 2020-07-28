@@ -82,7 +82,7 @@ header .header{
     margin-left: 10px;
 }
 
-
+/* ASIDE */
 aside{
     width: 40%;
     height: calc(85vh - 80px);
@@ -137,6 +137,7 @@ aside .rubrica .utente1{
     background-color: #fff;
 }
 
+/* MAIN (chat e campo di digitazione) */
 main{
     width: 60%;
     height: calc(85vh - 80px);
