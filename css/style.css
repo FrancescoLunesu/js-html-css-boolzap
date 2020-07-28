@@ -56,7 +56,7 @@ nav .icons{
 header .header{
     width: 60%;
     height: 100%;
-    background-color: blue;
+    background-color: #eaeaea;
     /* border: 1px solid black; */
     float: left;
     display: flex;
@@ -140,38 +140,100 @@ aside .rubrica .utente1{
 main{
     width: 60%;
     height: calc(85vh - 80px);
-    background-color: red;
     float: left;
 }
 
 main .chat{
     width: 100%;
-    height: 80%;
+    height: 90%;
     overflow-y: scroll;
     background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fbackgroundcheckall.com%2Fwp-content%2Fuploads%2F2017%2F12%2Fwhatsapp-default-background-wallpaper-8.jpg&f=1&nofb=1);
     padding: 30px;
 }
 
-.chat .destinatario, .chat .mittente{
+.chat .mex-destinatario, .chat .mex-mittente{
     /* border: 1px solid black; */
-    border-radius: 20px;
-    background-color: #fff;
-    padding: 15px;
+    border-radius: 15px;
+    padding: 10px;
 }
 
-.chat .destinatario{
+.chat .destinatario {
     display: flex;
     justify-content: flex-start;
-    width: 100px;
+    margin: 5px 0;
 }
-.chat .mittente{
+
+.chat .mittente {
     display: flex;
     justify-content: flex-end;
-    width: 100px;
+    margin: 5px 0;
+}
+
+.chat .mex-destinatario{
+    background-color: #fff;
+}
+
+.chat .mex-destinatario .ora{
+    background-color: #fff;
+    font-size: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    color: lightgray;
+    margin-top:5px;
+}
+
+.chat .mex-mittente{
+    background-color: #d5f9bb;
+}
+
+.chat .mex-mittente .ora{
+    font-size: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    color: lightgray;
+    margin-top:5px;
 }
 
 main .digitazione{
     width: 100%;
-    height: 20%;
-    background-color: green;
+    height: 10%;
+    background-color: #f3eeea;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+main .digitazione .emoji{
+    width: 10%;
+    padding: 10px;
+}
+
+main .digitazione .emoji i{
+    font-size: 30px;
+    color: #6b7376;
+}
+
+main .digitazione .barra-testo{
+    width: 80%;
+}
+
+main .digitazione .barra-testo input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+main .digitazione .mic{
+    width: 10%;
+    padding: 10px;
+}
+
+main .digitazione .mic i{
+    font-size: 30px;
+    color: #6b7376;
 }
